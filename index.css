@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    height: 100vh;
+    /* background-image: url(Screenshot\ 2025-10-23\ 042114.png); */
+    background: whitesmoke url(https://www.transparenttextures.com/patterns/asfalt-dark.png) ;
+    animation: move 40s linear infinite;
+    font-family: sans-serif;
+    transform-origin: center bottom;
+    animation: popUp 1s ease-out forwards;
+    opacity: 0;
+} 
+
+@keyframes popUp {
+  0% {
+    transform: translateY(50%) scale(2);
+    /* opacity: 2; */
+  }
+  /* 50% {
+    transform: translateY(-5%) scale(1.05);
+    opacity: 1;
+  } */
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 4;
+  }
+}
+
+
+@keyframes move{
+    from {background-position: 0,0;}
+    to {background-position: 1000px 1000px;}
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* border-radius: 10px; */
+}
+
+.nav a{
+    /* display: flex;
+    justify-content: right; */
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    /* background-color: bisque; */
+    border-color:black ;
+}
+
+
+.navlinks{
+    display: flex;
+    gap: 20px;
+}
+
+.mid {
+    /* background-image: url(urban\ source.png); */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    /* text-align: center; */
+    background-color: gray;
+    margin: 0;
+    padding: 70px;
+    background: black url(Your\ paragraph\ text.png) ;
+    animation: move 60s linear infinite;
+}
+
+.mid h1{
+    margin:0;
+}
+.mid p{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.mid button{
+    background-color: rgb(248, 35, 35);
+    border-radius: 7px;
+    font-size: 1.2rem;
+    border-color: red;
+    color: white;
+    padding: 5px;
+}
+.mid img{
+    background: black url(https://www.transparenttextures.com/patterns/diamond-upholstery.png) ;
+    animation: move 40s linear infinite;
+    border-radius: 20px;
+}
+
+h2{
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 1rem;
+}
+
+h3,h4,h5,h6{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    /* background-color: black; */
+}
+
+.b1,.b2,.b3,.b4{
+    background-color: lightgray;
+    border-radius: 20px;
+    border-color: lightgray;
+    padding: 20px;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.body1{
+    border-radius: 20px;
+}
+
+.res{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
