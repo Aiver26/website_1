@@ -2,67 +2,117 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/h.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Urbansource — Custom Merchandise</title>
 </head>
 
 <body>
     <div class="body1">
         <header class="nav">
-            <img class="img" src="Untitled design.png" alt="urban source logo" width="200px" height="100px">
+            <a class="brand" href="home.html">Urbansource</a>
             <!-- <p class="head">Urbansource</p> -->
-            <div class="navlinks">
+            <nav class="navlinks" aria-label="Main navigation">
                 <!-- <a href="">home</a> -->
-                <a href="index5.html">login</a>
-                <a href="index4.html">register</a>
-                <a href="index3.html">about us</a>
-                <a href="index2.html">contact us</a>
-            </div>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact</a>
+            </nav>
 
         </header>
 
-        <div class="mid">
-            <h1>Design your style urban with souurce</h1>
-            <br>
-            <p>create coutom merchandise with your own design and showcase your unique style</p>
-            <br>
-            <button>shop now</button>
+        <main class="mid">
+            <h1>Design Your Urban Identity</h1>
+            <p>Urbansource helps creators, teams and brands produce premium custom merchandise — from t‑shirts and hoodies to footwear and accessories. Upload your art, choose materials, and get production-ready mockups in minutes.</p>
+            <p class="lead">Fast turnaround • High-quality materials • Low minimums</p>
+            <a class="cta" href="#products">Explore Products</a>
+        </main>
+
+        <h2 id="products">Featured Products</h2>
+
+        <div class="carousel-wrapper">
+            <div class="products-carousel">
+                <article class="card" tabindex="0">
+                    <img src="Images/2J7A0195.jpg" alt="Roaring Rage T-shirt">
+                    <h3>Roaring Rage T-shirt</h3>
+                    <p>Premium cotton t-shirt</p>
+                    <div class="card-foot"><p class="price">₹1,000</p><span class="category">Shirt</span></div>
+                </article>
+                <article class="card" tabindex="0">
+                    <img src="Images/1L9A8202.webp" alt="Cloud Nine Hoodie">
+                    <h3>Cloud Nine Hoodie</h3>
+                    <p>Warm and comfortable hoodie</p>
+                    <div class="card-foot"><p class="price">₹2,000</p><span class="category">Hoodie</span></div>
+                </article>
+                <article class="card" tabindex="0">
+                    <img src="Images/HhKRG4sB_bead4258f27e47a0979b6f2159e083b8.webp" alt="Urban Cargo Pants">
+                    <h3>Urban Cargo Pants</h3>
+                    <p>Durable and stylish cargo pants</p>
+                    <div class="card-foot"><p class="price">₹1,500</p><span class="category">Pants</span></div>
+                </article>
+                <article class="card" tabindex="0">
+                    <img src="Images/1L9A8424.webp" alt="Classic Button Shirt">
+                    <h3>Classic Button Shirt</h3>
+                    <p>Premium quality button-up shirt</p>
+                    <div class="card-foot"><p class="price">₹1,200</p><span class="category">Shirt</span></div>
+                </article>
+                <article class="card" tabindex="0">
+                    <img src="Images/1L9A8534.webp" alt="Urban Jacket">
+                    <h3>Urban Jacket</h3>
+                    <p>Lightweight and versatile jacket</p>
+                    <div class="card-foot"><p class="price">₹2,800</p><span class="category">Jacket</span></div>
+                </article>
+                <article class="card" tabindex="0">
+                    <img src="Images/18_35b1ddc2-506d-48db-ab5c-c66260e1df47.webp" alt="Bomber Jacket">
+                    <h3>Bomber Jacket</h3>
+                    <p>Classic bomber-style jacket</p>
+                    <div class="card-foot"><p class="price">₹2,500</p><span class="category">Jacket</span></div>
+                </article>
+                <article class="card" tabindex="0">
+                    <img src="Images/Wolf_Jogger.webp" alt="Premium Joggers">
+                    <h3>Premium Joggers</h3>
+                    <p>Comfortable everyday joggers</p>
+                    <div class="card-foot"><p class="price">₹1,300</p><span class="category">Bottoms</span></div>
+                </article>
+            </div>
         </div>
-
-        <h2>featured produucts</h2>
-
-        <div class="products">
-            <button class="b1">
-                <img src=""
-                    alt="t-shirt">
-                <h3>custom t-shirt</h3>
-                <p>premiuim cotton <br> t-shirt</p>
-                <p>1000rs</p>
-            </button>
-            <button class="b2">
-                <img src="" alt="hoodie">
-                <h4>custom hoodie</h4>
-                <p>warm and cofortable <br> hoodie</p>
-                <p>2000rs</p>
-            </button>
-            <button class="b3">
-                <img src="" alt="shoes">
-                <h5>custom shoes</h5>
-                <p>easy to wear <br> shoes</p>
-                <p>3000rs</p>
-            </button>
-            <!-- <button class="b3">
-                <img src="" alt="cup">
-                <h6>custom cup</h6>
-                <p>ceramic cup for  your designs</p>
-                <p>700rs</p>
-            </button> -->
-        </div>
         <br>
         <br>
         <br>
-        <div class="res">@2025 Urbansource.All rights reserved. </div>
-
+        <footer class="res">© 2025 Urbansource. All rights reserved.</footer>
     </div>
+
+    <script>
+    (function(){
+      const carousel = document.querySelector('.products-carousel');
+      if(!carousel) return;
+      const speed = 0.6; // pixels per frame, lower = slower
+      let rafId = null;
+
+      function step(){
+        carousel.scrollLeft += speed;
+        if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth - 1){
+          // loop back to start smoothly
+          carousel.scrollLeft = 0;
+        }
+        rafId = requestAnimationFrame(step);
+      }
+
+      // pause on hover/focus
+      carousel.addEventListener('mouseenter', ()=>{ if(rafId) cancelAnimationFrame(rafId); rafId = null; });
+      carousel.addEventListener('mouseleave', ()=>{ if(!rafId) step(); });
+      carousel.addEventListener('focusin', ()=>{ if(rafId) cancelAnimationFrame(rafId); rafId = null; });
+      carousel.addEventListener('focusout', ()=>{ if(!rafId) step(); });
+
+      // start
+      setTimeout(()=> step(), 500);
+    })();
+    </script>
+
+</body>
+</html>
