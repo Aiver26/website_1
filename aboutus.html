@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Custom Merch Co.</title>
-  <link rel="stylesheet" href="index3.css" />
+  <title>About Us — Urbansource</title>
+  <link rel="stylesheet" href="CSS/au.css" />
 </head>
 <body>
-  <header>
-    <h1>UrbanSource</h1>
-    <nav>
-       <b> <a href="http://127.0.0.1:5500/HTML/index3.html" class="active">about us </a></b>
-    </nav></header>
+  <header class="nav">
+    <a class="brand" href="home.html">Urbansource</a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="home.html">Home</a>
+      <a href="aboutus.html" class="active">About Us</a>
+      <a href="contactus.html">Contact</a>
+      <a href="register.html">Register</a>
+    </nav>
   </header>
-<section class="team">
- <centre><h3>ADDRESS</h3></centre>
- <CENTRE><P> you can find your anything here so , come  and get which thing you want.</P><P></CENTRE>
-<CENTRE> <p> STATE.H.P,DIST.Solan , in  Kotla nala near g square Mall named as UrbanSource</p></CENTRE>
-  <h3>MEET THE TEAM</h3>
-  <div class="team-members">
-    <div class="member">
-      <img src="images/akhilesh.jpg" alt=" First member" />
-      <h4>Akhilesh</h4>
-      <p>Founder & Creative Lead</p>
-    </div>
-    <div class="member">
-      <img src="images/aditya.jpg" alt=" Second member" />
-      <h4>Aditya</h4>
-      <p>Product Designer</p>
-    </div>
-    <div class="member">
-      <img src="images/ayush.jpg" alt="Third member" />
-      <h4>Ayush</h4>
-      <p>Marketing & Outreach</p>
-    </div>
-    <div class="member">
-      <img src="images/kartik.jpg" alt="Fourth member" />
-      <h4>Kartik</h4>
-      <p>Operations Manager</p>
-    </div>
-  </div>
-  <CENTRE><P>We  are  avialable from monday TO saturday from 9:00AM TO 9:00PM.</P></CENTRE>
-</section>
-  <footer>
-    <p>&copy; All things avialable here.
-    </p>
-    <p>so come and get your own choice.</p>
-    <P> Thanks for watching our website</P>
+
+  <main>
+    <section class="hero">
+      <h1>About Urbansource</h1>
+      <p class="tagline">Empowering creators with premium custom merchandise since 2025</p>
+    </section>
+
+    <section class="location">
+      <h2>Our Location</h2>
+      <div class="location-content">
+        <p><strong>Visit us at:</strong></p>
+        <p>Kotla Nala, near G Square Mall<br>Solan, Himachal Pradesh, India</p>
+        <p class="hours"><strong>Hours of Operation:</strong><br>Monday – Saturday: 9:00 AM – 9:00 PM IST</p>
+      </div>
+    </section>
+
+    <section class="team">
+      <h2>Meet Our Team</h2>
+      <p class="intro">We're a passionate group of designers, developers, and entrepreneurs dedicated to bringing your vision to life.</p>
+      <div class="team-members">
+        <div class="member">
+          <img src="Images/medium-shot-smiley-man-sitting-desk_23-2149927603.avif" alt="Akhilesh, Founder & Creative Lead" />
+          <h3>Akhilesh Jaguri</h3>
+          <p class="role">Founder & Creative Lead</p>
+          <p class="bio">Visionary designer with a passion for quality and innovation.</p>
+        </div>
+        <div class="member">
+          <img src="Images/portrait-smile-businessman-with-arms-crossed-office-company-male-person-workplace-career-dubai-confidence-professional-advisor-happy-employee-entrepreneur-work-job_590464-340036.avif" alt="Aditya, Product Designer" />
+          <h3>Aditya Thakur</h3>
+          <p class="role">Product Designer</p>
+          <p class="bio">Crafting beautiful and functional product experiences.</p>
+        </div>
+        <div class="member">
+          <img src="Images/istockphoto-2165425195-612x612.jpg" alt="Ayush, Marketing & Outreach" />
+          <h3>Ayush Patel</h3>
+          <p class="role">Marketing & Outreach</p>
+          <p class="bio">Building connections and telling our brand story.</p>
+        </div>
+        <div class="member">
+          <img src="Images/handsome-businessman-his-office_1368-7335.avif" alt="Kartik, Operations Manager" />
+          <h3>Kartik Gurung</h3>
+          <p class="role">Operations Manager</p>
+          <p class="bio">Ensuring smooth operations and timely deliveries.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Ready to Create?</h2>
+      <p>Start designing your custom merchandise today.</p>
+      <a href="home.html" class="cta-btn">Explore Products</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Urbansource. All rights reserved.</p>
+    <p>Crafting quality merchandise for creators worldwide.</p>
   </footer>
 </body>
 </html>

@@ -1,0 +1,96 @@
+:root{
+    --bg:#f5f5f6;
+    --accent:#ff3b3b;
+    --muted:#6b6b6b;
+    --card:#ffffff;
+    --category:#0872eb;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg,#f7f7f9 0%,var(--bg) 100%);
+  font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  animation: bgShift 30s linear infinite;
+}
+
+@keyframes bgShift{
+  from {background-position:0 0}
+  to {background-position:400px 400px}
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 28px;
+}
+
+.nav .img{height:96px; width:auto; mix-blend-mode: multiply; background:transparent; display:block}
+/* Text brand styling (fallback to blend reliably) */
+.brand{
+  font-family: 'Merriweather', serif;
+  font-weight:700;
+  font-size:1.6rem;
+  color:rgba(34,34,34,0.95);
+  text-decoration:none;
+  letter-spacing:0.3px;
+}
+.brand:hover{opacity:0.95}
+
+.navlinks{display:flex;gap:18px}
+.navlinks a{color:#222;text-decoration:none;font-weight:600;padding:6px 10px;border-radius:6px;transition:background .18s,transform .18s}
+.navlinks a:hover{background:rgba(0,0,0,0.06);transform:translateY(-2px)}
+
+.mid{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px;background:linear-gradient(90deg, rgba(0,0,0,0.02), rgba(0,0,0,0.00));
+  animation: heroIn .7s ease-out both;
+}
+.mid h1{font-size:2.1rem;margin:0 0 12px;font-weight:800;font-family: 'Merriweather', serif;letter-spacing:0.2px}
+.mid p{margin:0 0 12px;color:var(--muted);font-size:1.05rem}
+.mid .lead{margin:0 0 18px;color:var(--muted);font-weight:600}
+.cta{display:inline-block;background:var(--accent);color:#fff;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:700;transition:transform .18s,box-shadow .18s}
+.cta:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,0,0,0.12)}
+
+h2{font-size:1.8rem;text-align:center;margin:28px 0 8px;font-family: 'Times New Roman', Times, serif}
+
+.carousel-wrapper{display:flex;justify-content:center;padding:24px;overflow:hidden}
+.products-carousel{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;padding:12px 0;max-width:100%;-webkit-overflow-scrolling:touch}
+.products-carousel::-webkit-scrollbar{height:8px}
+.products-carousel::-webkit-scrollbar-track{background:#e0e0e0;border-radius:4px}
+.products-carousel::-webkit-scrollbar-thumb{background:#999;border-radius:4px}
+.products-carousel::-webkit-scrollbar-thumb:hover{background:#666}
+
+.products{display:flex;justify-content:center;gap:20px;padding:24px;flex-wrap:wrap}
+.card{background:var(--card);border-radius:14px;padding:16px;width:260px;flex-shrink:0;box-shadow:0 6px 18px rgba(18,18,18,0.06);transition:transform .22s,box-shadow .22s;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;min-height:360px}
+.card img{width:220px;height:180px;object-fit:cover;border-radius:8px;margin-bottom:12px}
+.card:hover{transform:translateY(-8px);box-shadow:0 16px 36px rgba(18,18,18,0.12)}
+.card h3{margin:8px 0 6px;font-size:1.05rem;min-height:1.4em}
+.card p{margin:6px 0;color:var(--muted);font-size:0.95rem}
+.card-foot{display:flex;justify-content:space-between;align-items:center;width:100%;margin-top:auto}
+.price{margin:0;font-weight:800;color:var(--accent)}
+.category{display:inline-block;background:var(--category);color:#fff;padding:6px 12px;border-radius:20px;font-size:0.85rem;font-weight:600}
+
+.res{display:flex;justify-content:center;background:#111;color:#fff;padding:18px;margin-top:28px;border-radius:6px}
+
+/* small responsive tweaks */
+@media (max-width:720px){
+  .products{gap:12px}
+  .mid{padding:44px 16px}
+  .mid h1{font-size:1.5rem}
+  .nav .img{height:64px}
+  /* make nav links wrap on small screens and remain usable */
+  .nav{flex-direction:column;gap:8px}
+  .navlinks{flex-wrap:wrap;justify-content:center;gap:10px;padding:6px 0}
+  .navlinks a{padding:8px 10px;font-size:0.95rem}
+}
+
+@keyframes heroIn{
+  from{transform:translateY(14px);opacity:0}
+  to{transform:translateY(0);opacity:1}
+}
+
